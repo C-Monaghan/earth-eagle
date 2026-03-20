@@ -1,0 +1,216 @@
+lavaan 0.6.15 ended normally after 138 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        84
+
+                                                  Used       Total
+  Number of observations                          1309        1320
+  Number of missing patterns                        73            
+
+Model Test User Model:
+                                                      
+  Test statistic                              1100.733
+  Degrees of freedom                               330
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                             11519.788
+  Degrees of freedom                               368
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.931
+  Tucker-Lewis Index (TLI)                       0.923
+                                                      
+  Robust Comparative Fit Index (CFI)             0.931
+  Robust Tucker-Lewis Index (TLI)                0.924
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -27127.969
+  Loglikelihood unrestricted model (H1)     -26577.602
+                                                      
+  Akaike (AIC)                               54423.937
+  Bayesian (BIC)                             54858.807
+  Sample-size adjusted Bayesian (SABIC)      54591.979
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.042
+  90 Percent confidence interval - lower         0.039
+  90 Percent confidence interval - upper         0.045
+  P-value H_0: RMSEA <= 0.050                    1.000
+  P-value H_0: RMSEA >= 0.080                    0.000
+                                                      
+  Robust RMSEA                                   0.045
+  90 Percent confidence interval - lower         0.041
+  90 Percent confidence interval - upper         0.048
+  P-value H_0: Robust RMSEA <= 0.050             0.991
+  P-value H_0: Robust RMSEA >= 0.080             0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.047
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Observed
+  Observed information based on                Hessian
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  dep_w2 =~                                                             
+    Depression_1      1.000                               0.244    0.718
+    Depression_2      0.931    0.057   16.251    0.000    0.227    0.524
+    Depression_3      0.880    0.061   14.423    0.000    0.214    0.460
+    Depression_4      1.016    0.046   22.317    0.000    0.247    0.718
+    Depression_5      0.941    0.050   18.716    0.000    0.229    0.611
+    Depression_6      0.671    0.039   17.056    0.000    0.163    0.545
+    Depression_7      1.252    0.049   25.742    0.000    0.305    0.741
+    Depression_8      0.788    0.051   15.494    0.000    0.192    0.498
+  lon_w2 =~                                                             
+    Loneliness_1      1.000                               0.509    0.749
+    Loneliness_2      0.900    0.071   12.745    0.000    0.458    0.768
+    Loneliness_3      0.886    0.070   12.622    0.000    0.451    0.748
+  procras_w3 =~                                                         
+    Procras_1         1.000                               0.760    0.574
+    Procras_2         1.184    0.050   23.710    0.000    0.900    0.665
+    Procras_3         1.174    0.062   18.870    0.000    0.893    0.666
+    Procras_4         1.147    0.062   18.635    0.000    0.872    0.665
+    Procras_5         1.326    0.067   19.853    0.000    1.009    0.737
+    Procras_6         1.329    0.068   19.526    0.000    1.011    0.721
+    Procras_7         1.399    0.070   19.956    0.000    1.064    0.750
+    Procras_8         1.375    0.068   20.172    0.000    1.046    0.764
+    Procras_9         1.175    0.067   17.598    0.000    0.894    0.615
+    Procras_10        1.173    0.062   18.835    0.000    0.892    0.675
+    Procras_11        1.093    0.059   18.487    0.000    0.832    0.660
+    Procras_12        1.037    0.062   16.635    0.000    0.789    0.567
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  procras_w3 ~                                                          
+    Age_w2     (c)    0.004    0.003    1.618    0.106    0.006    0.060
+    dep_w2    (b1)    0.968    0.160    6.056    0.000    0.310    0.310
+    lon_w2    (b2)    0.092    0.097    0.949    0.343    0.062    0.062
+    Gender            0.008    0.044    0.171    0.865    0.010    0.005
+    Education        -0.257    0.045   -5.662    0.000   -0.337   -0.165
+    Mrtl_stts         0.011    0.044    0.247    0.805    0.014    0.007
+    Job_stats        -0.029    0.057   -0.511    0.609   -0.038   -0.018
+  dep_w2 ~                                                              
+    Age_w2    (a1)   -0.003    0.001   -4.225    0.000   -0.013   -0.129
+  lon_w2 ~                                                              
+    Age_w2    (a2)   -0.008    0.003   -2.951    0.003   -0.015   -0.155
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+ .dep_w2 ~~                                                             
+   .lon_w2            0.062    0.008    7.831    0.000    0.507    0.507
+ .Procras_1 ~~                                                          
+   .Procras_2         0.433    0.036   11.900    0.000    0.433    0.395
+ .Procras_10 ~~                                                         
+   .Procras_11        0.283    0.030    9.334    0.000    0.283    0.308
+ .Depression_1 ~~                                                       
+   .Depression_7      0.011    0.003    4.102    0.000    0.011    0.175
+ .Depression_4 ~~                                                       
+   .Depression_6      0.017    0.002    7.978    0.000    0.017    0.287
+ .lon_w2 ~~                                                             
+   .Depression_5      0.035    0.008    4.207    0.000    0.069    0.232
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .Depression_1      1.329    0.047   28.012    0.000    1.329    3.916
+   .Depression_2      1.433    0.046   31.349    0.000    1.433    3.309
+   .Depression_3      1.492    0.044   34.112    0.000    1.492    3.201
+   .Depression_4      1.337    0.048   27.793    0.000    1.337    3.882
+   .Depression_5      1.354    0.045   30.087    0.000    1.354    3.611
+   .Depression_6      1.232    0.033   37.727    0.000    1.232    4.112
+   .Depression_7      1.462    0.059   24.707    0.000    1.462    3.554
+   .Depression_8      1.337    0.039   34.560    0.000    1.337    3.464
+   .Loneliness_1      2.072    0.173   11.976    0.000    2.072    3.050
+   .Loneliness_2      1.889    0.154   12.256    0.000    1.889    3.165
+   .Loneliness_3      1.839    0.151   12.186    0.000    1.839    3.050
+   .Procras_1         2.415    0.181   13.315    0.000    2.415    1.823
+   .Procras_2         2.469    0.214   11.563    0.000    2.469    1.825
+   .Procras_3         2.380    0.212   11.238    0.000    2.380    1.774
+   .Procras_4         2.469    0.207   11.936    0.000    2.469    1.882
+   .Procras_5         2.415    0.238   10.126    0.000    2.415    1.764
+   .Procras_6         2.924    0.239   12.226    0.000    2.924    2.087
+   .Procras_7         2.710    0.251   10.774    0.000    2.710    1.911
+   .Procras_8         2.513    0.247   10.172    0.000    2.513    1.836
+   .Procras_9         2.809    0.213   13.215    0.000    2.809    1.934
+   .Procras_10        2.329    0.211   11.020    0.000    2.329    1.764
+   .Procras_11        2.044    0.197   10.360    0.000    2.044    1.623
+   .Procras_12        2.272    0.188   12.073    0.000    2.272    1.632
+   .dep_w2            0.000                               0.000    0.000
+   .lon_w2            0.000                               0.000    0.000
+   .procras_w3        0.000                               0.000    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .Depression_1      0.056    0.003   18.404    0.000    0.056    0.485
+   .Depression_2      0.136    0.006   23.194    0.000    0.136    0.726
+   .Depression_3      0.171    0.007   23.994    0.000    0.171    0.789
+   .Depression_4      0.057    0.003   19.548    0.000    0.057    0.484
+   .Depression_5      0.088    0.004   22.155    0.000    0.088    0.626
+   .Depression_6      0.063    0.003   22.805    0.000    0.063    0.703
+   .Depression_7      0.076    0.004   17.645    0.000    0.076    0.450
+   .Depression_8      0.112    0.005   23.615    0.000    0.112    0.752
+   .Loneliness_1      0.202    0.021    9.553    0.000    0.202    0.438
+   .Loneliness_2      0.146    0.016    9.206    0.000    0.146    0.410
+   .Loneliness_3      0.160    0.016    9.855    0.000    0.160    0.441
+   .Procras_1         1.177    0.049   23.883    0.000    1.177    0.671
+   .Procras_2         1.020    0.044   22.967    0.000    1.020    0.557
+   .Procras_3         1.002    0.043   23.062    0.000    1.002    0.557
+   .Procras_4         0.961    0.041   23.193    0.000    0.961    0.558
+   .Procras_5         0.857    0.039   22.249    0.000    0.857    0.457
+   .Procras_6         0.942    0.042   22.370    0.000    0.942    0.480
+   .Procras_7         0.879    0.040   21.885    0.000    0.879    0.437
+   .Procras_8         0.781    0.036   21.651    0.000    0.781    0.417
+   .Procras_9         1.311    0.055   23.746    0.000    1.311    0.621
+   .Procras_10        0.948    0.041   23.038    0.000    0.948    0.544
+   .Procras_11        0.894    0.039   23.065    0.000    0.894    0.564
+   .Procras_12        1.315    0.055   24.072    0.000    1.315    0.679
+   .dep_w2            0.058    0.004   13.250    0.000    0.983    0.983
+   .lon_w2            0.253    0.032    7.882    0.000    0.976    0.976
+   .procras_w3        0.495    0.047   10.632    0.000    0.855    0.855
+
+R-Square:
+                   Estimate
+    Depression_1      0.515
+    Depression_2      0.274
+    Depression_3      0.211
+    Depression_4      0.516
+    Depression_5      0.374
+    Depression_6      0.297
+    Depression_7      0.550
+    Depression_8      0.248
+    Loneliness_1      0.562
+    Loneliness_2      0.590
+    Loneliness_3      0.559
+    Procras_1         0.329
+    Procras_2         0.443
+    Procras_3         0.443
+    Procras_4         0.442
+    Procras_5         0.543
+    Procras_6         0.520
+    Procras_7         0.563
+    Procras_8         0.583
+    Procras_9         0.379
+    Procras_10        0.456
+    Procras_11        0.436
+    Procras_12        0.321
+    dep_w2            0.017
+    lon_w2            0.024
+    procras_w3        0.145
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    DIDE             -0.003    0.001   -3.517    0.000   -0.004   -0.040
+    LIDE             -0.001    0.001   -0.894    0.371   -0.001   -0.010
+    Total_IE         -0.004    0.001   -3.850    0.000   -0.005   -0.050
+    Total_Effect      0.001    0.003    0.277    0.782    0.001    0.010
+
